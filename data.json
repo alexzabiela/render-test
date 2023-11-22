@@ -9,7 +9,7 @@
         {
             "id": 2,
             "title": "Law Service 2",
-            "image": "image2",
+            "image": "https://picsum.photos/500/300",
             "description": "desc2"
         },
         {
