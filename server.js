@@ -10,17 +10,18 @@ const typeDefs = gql`
     description: String
   }
 
-  type formSubmission {
+  type FormSubmission {
     id: Int
     name: String
     email: String
     message: String
   }
-
+  
   type Query {
     services: [Service]
     formSubmissions: [FormSubmission]
   }
+  
 `;
 
 // Resolvers define the technique for fetching the types in the schema
