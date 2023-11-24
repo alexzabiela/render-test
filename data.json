@@ -34,9 +34,9 @@
         },
         {
             "id": 2,
-            "title": "Lucy Smith",
-            "image": "lucy.smith@gmail.com",
-            "description": "message2G"
+            "name": "Lucy Smith",
+            "email": "lucy.smith@gmail.com",
+            "message": "message2"
         }
     ]
 }
