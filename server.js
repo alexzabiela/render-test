@@ -10,8 +10,15 @@ const typeDefs = gql`
     description: String
   }
 
+  type formSubmissions {
+    id: Int
+    name: String
+    email: String
+    message: String
+  }
+
   type Query {
-    services: [Service]
+    formSubmissions: [FormSubmission]
   }
 `;
 
@@ -19,6 +26,7 @@ const typeDefs = gql`
 const resolvers = {
   Query: {
     services: () => data.services,
+    formSubmissions: () => data.formSubmissions
   },
 };
 
