@@ -21,6 +21,10 @@ const typeDefs = gql`
     services: [Service]
     formSubmissions: [FormSubmission]
   }
+
+  type Mutation {
+    addFormSubmission(name: String!, email: String!, message: String!): FormSubmission
+  }
   
 `;
 
@@ -30,6 +34,15 @@ const resolvers = {
     services: () => data.services,
     formSubmissions: () => data.formSubmissions
   },
+  Mutation: {
+    addFormSubmission: (parent, args) => {
+      // Implement logic to add form submission
+      // Example:
+      const newSubmission = { id: generateNewId(), ...args };
+      data.formSubmissions.push(newSubmission);
+      return newSubmission;
+    }
+  }
 };
 
 // Create the Apollo Server
