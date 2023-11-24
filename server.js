@@ -10,7 +10,7 @@ const typeDefs = gql`
     description: String
   }
 
-  type formSubmissions {
+  type formSubmission {
     id: Int
     name: String
     email: String
